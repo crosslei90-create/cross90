@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>你的名字 — 平面设计师作品集</title>
-  <meta name="description" content="平面设计师个人网站模板，包含作品、服务、关于和联系方式。" />
+  <title>YOUR NAME — Graphic Designer</title>
+  <meta name="description" content="平面设计师个人作品网站：动态作品展示、滚动动效与项目详情。" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="noise"></div>
   <header class="site-header">
     <a class="logo" href="#home">YOUR NAME</a>
-    <nav>
+    <button class="menu-btn" aria-label="切换导航">MENU</button>
+    <nav class="site-nav">
       <a href="#work">WORK</a>
       <a href="#about">ABOUT</a>
       <a href="#services">SERVICES</a>
@@ -19,64 +21,65 @@
   </header>
 
   <main id="home">
-    <section class="hero">
-      <p class="label">GRAPHIC DESIGNER</p>
-      <h1>用视觉系统，讲清品牌的故事。</h1>
-      <p class="intro">
-        我专注于品牌视觉、海报、包装与字体排版。以下是我近期项目，你可以替换为你自己的内容与图片。
-      </p>
+    <section class="hero reveal">
+      <p class="kicker">INDEPENDENT GRAPHIC DESIGNER</p>
+      <h1>
+        <span>Visual systems</span>
+        <span>for culture,</span>
+        <span>brands & objects.</span>
+      </h1>
+      <p class="intro">我做品牌视觉、海报、包装和字体设计。你可以替换这里所有文字、项目和图片。</p>
     </section>
 
-    <section id="work" class="work-grid">
-      <article>
-        <img src="https://picsum.photos/seed/poster/800/600" alt="项目1" />
-        <h2>项目 01 / 品牌视觉</h2>
-        <p>品牌识别系统、海报与延展物料设计。</p>
+    <section class="ticker" aria-label="滚动标题">
+      <div class="ticker-track">
+        <span>BRANDING</span><span>EDITORIAL</span><span>PACKAGING</span><span>POSTER</span><span>TYPE DESIGN</span>
+        <span>BRANDING</span><span>EDITORIAL</span><span>PACKAGING</span><span>POSTER</span><span>TYPE DESIGN</span>
+      </div>
+    </section>
+
+    <section id="work" class="work-list">
+      <article class="work-item reveal" data-title="NOVA COFFEE" data-type="品牌视觉 / 包装" data-desc="为精品咖啡品牌重塑视觉识别，建立完整包装与社媒系统。" data-img="https://picsum.photos/seed/nova/1400/900">
+        <img src="https://picsum.photos/seed/nova/1200/720" alt="NOVA COFFEE 项目预览" />
+        <div class="meta"><h2>NOVA COFFEE</h2><p>品牌视觉 / 包装</p></div>
       </article>
-      <article>
-        <img src="https://picsum.photos/seed/package/800/600" alt="项目2" />
-        <h2>项目 02 / 包装设计</h2>
-        <p>产品包装、结构标签与陈列视觉。</p>
+      <article class="work-item reveal" data-title="ALTITUDE FEST" data-type="音乐节主视觉" data-desc="建立从海报到现场导视的整套活动视觉语言。" data-img="https://picsum.photos/seed/fest/1400/900">
+        <img src="https://picsum.photos/seed/fest/1200/720" alt="ALTITUDE FEST 项目预览" />
+        <div class="meta"><h2>ALTITUDE FEST</h2><p>音乐节主视觉</p></div>
       </article>
-      <article>
-        <img src="https://picsum.photos/seed/editorial/800/600" alt="项目3" />
-        <h2>项目 03 / 编辑与版式</h2>
-        <p>书籍画册、展览导视与排版系统。</p>
-      </article>
-      <article>
-        <img src="https://picsum.photos/seed/type/800/600" alt="项目4" />
-        <h2>项目 04 / 字体与实验</h2>
-        <p>字形探索、视觉实验与动态设计。</p>
+      <article class="work-item reveal" data-title="FRAME BOOK" data-type="出版物设计" data-desc="双语艺术出版物设计，聚焦网格系统和阅读节奏。" data-img="https://picsum.photos/seed/book/1400/900">
+        <img src="https://picsum.photos/seed/book/1200/720" alt="FRAME BOOK 项目预览" />
+        <div class="meta"><h2>FRAME BOOK</h2><p>出版物设计</p></div>
       </article>
     </section>
 
-    <section id="about" class="split">
-      <h2>ABOUT</h2>
-      <p>
-        我是一名平面设计师，擅长将策略转化为有辨识度的视觉语言。
-        可承接品牌升级、新品牌从0到1建设，以及活动主视觉设计。
-      </p>
+    <section id="about" class="split reveal">
+      <h3>ABOUT</h3>
+      <p>我是一名平面设计师，关注策略与视觉之间的转换。服务从品牌策略到设计落地，适配线上线下完整触点。</p>
     </section>
 
-    <section id="services" class="split">
-      <h2>SERVICES</h2>
+    <section id="services" class="split reveal">
+      <h3>SERVICES</h3>
       <ul>
-        <li>品牌策略与视觉识别（VI）</li>
+        <li>品牌识别系统（Logo / VI）</li>
         <li>包装系统与电商视觉</li>
-        <li>活动主视觉与社媒视觉模板</li>
-        <li>印刷物料与字体排版</li>
+        <li>活动主视觉与延展物料</li>
+        <li>字体排版与编辑设计</li>
       </ul>
     </section>
 
-    <section id="contact" class="split">
-      <h2>CONTACT</h2>
-      <p>邮箱：hello@yourname.com</p>
-      <p>微信 / Instagram：@yourname</p>
+    <section id="contact" class="split reveal">
+      <h3>CONTACT</h3>
+      <p>hello@yourname.com<br/>Instagram: @yourname</p>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 YOUR NAME. All rights reserved.</p>
-  </footer>
+  <div class="modal" aria-hidden="true">
+    <button class="close" aria-label="关闭详情">×</button>
+    <img class="modal-img" src="" alt="项目大图" />
+    <div class="modal-copy"><h4></h4><p class="type"></p><p class="desc"></p></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
