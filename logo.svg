@@ -1,0 +1,10 @@
+<svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Cross90 Logo</title>
+  <desc id="logoDesc">A minimalist C90 monogram with a circular mark.</desc>
+  <rect x="1" y="1" width="26" height="26" rx="13" stroke="currentColor" stroke-width="2"/>
+  <path d="M15 9C12 9 10 11.2 10 14C10 16.8 12 19 15 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M35 20V8H42.5C45 8 46.5 9.3 46.5 11.4C46.5 13.5 45 14.8 42.5 14.8H35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M50 20H60V8H50" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="72" cy="14" r="6" stroke="currentColor" stroke-width="2"/>
+  <text x="84" y="19" fill="currentColor" font-size="12" font-family="Arial, sans-serif" letter-spacing="1.5">STUDIO</text>
+</svg>
